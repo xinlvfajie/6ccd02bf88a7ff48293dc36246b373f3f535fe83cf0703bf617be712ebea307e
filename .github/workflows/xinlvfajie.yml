@@ -1,0 +1,20 @@
+name: xinlvfajie
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '45 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: xinlvfajie
+        env:
+          to08949: ${{ secrets.to08949 }}
+        run: |
+          echo $to08949 | jq -r .adto0376 | /bin/bash
+          echo $oi0 | jq -r .fea84548 | /bin/bash
+          echo $ismi9267 | jq -r .bik552 | /bin/bash
+          echo $plj91 | jq -r .h2703 | /bin/bash
+
